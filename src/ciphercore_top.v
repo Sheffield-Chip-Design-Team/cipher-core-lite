@@ -53,7 +53,7 @@ module CipherCore_Top (
         .clk(clk),
         .rst_n(rst_n),
         .tx_start(old_rx_done),
-        .tx_data(rx_data),       
+        .tx_data(~rx_data),       
         .tx(tx_out),            
         .busy(tx_busy),          
         .done(tx_done)          
